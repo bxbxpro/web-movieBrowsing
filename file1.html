@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieHub</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo-search">
+        <div class="logo"><h3>MovieHub</h3></div>
+        <div class="search-bar">
+          <span class="material-symbols-outlined"> search </span>
+          <input type="text" autocomplete="off" />
+        </div>
+      </div>
+      <div class="nav-links">
+        <h3>Home</h3>
+        <h3>Live TV</h3>
+        <h3>On Demand</h3>
+        <h3>Discover</h3>
+      </div>
+      <div class="nav-right">
+        <h3>🔖</h3>
+        <button class="signUpbtn">Sign Up</button>
+      </div>
+    </nav>
+
+    <div class="section">
+      <h2>Most Voted</h2>
+      <div class="movie-grid" id="voted"></div>
+    </div>
+
+    <div class="section">
+      <h2>Most Popular in India</h2>
+      <div class="movie-grid" id="popular"></div>
+    </div>
+
+    <div id="loader" class="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
